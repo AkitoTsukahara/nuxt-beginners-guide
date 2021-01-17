@@ -25,10 +25,16 @@ module.exports = {
 
   },
   plugins: [
-    '~/plugins/axios.js'
+    '~/plugins/axios.js',
+    { src: '~/plugins/logger', ssr: true }
   ],
   env: {
     QIITA_TOKEN: process.env.QIITA_TOKEN
+  },
+  router: {
+    middleware: [
+      'auth'
+    ]
   },
   /*
   ** Build configuration

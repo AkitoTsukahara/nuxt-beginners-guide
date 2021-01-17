@@ -1,5 +1,13 @@
 <template>
   <section class="container">
+    <ul>
+      <li>
+        <nuxt-link to='/login'>ログインページへ</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to='/authed-route'>認証が必要なページへ</nuxt-link>
+      </li>
+    </ul>
     <div>
       <h3>Nuxt.js のタグが付けられた投稿の一覧</h3>
       <ul>
