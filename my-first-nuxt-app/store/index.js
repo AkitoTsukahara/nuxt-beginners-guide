@@ -39,5 +39,4 @@ const store = {
     }
   }
 };
-
 export default () => new Vuex.Store(store);
