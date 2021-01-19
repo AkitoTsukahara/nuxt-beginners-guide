@@ -10,9 +10,13 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/dotenv": "^1.4.1",
     "core-js": "^3.6.5",
     "element-ui": "^2.13.2",
-    "nuxt": "^2.14.6"
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.29.1",
+    "nuxt": "^2.14.6",
+    "universal-cookie": "^4.0.4"
   },
   "devDependencies": {}
 }

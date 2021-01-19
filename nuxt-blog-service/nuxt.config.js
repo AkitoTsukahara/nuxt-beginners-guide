@@ -1,3 +1,6 @@
+require('dotenv').config();
+const { API_BASE_URL } = process.env;
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -32,11 +35,20 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     '@nuxtjs/axios',
+    '@nuxtjs/dotenv'
   ],
 
+  env: {
+    API_BASE_URL
+  },
+
   axios: {
-    baseURL: 'https://nuxt-blog-service-8b9cc.firebaseio.com'
+    baseURL: process.env.API_BASE_URL
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  router: {
+    middleware: ['auth-cookie']
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
