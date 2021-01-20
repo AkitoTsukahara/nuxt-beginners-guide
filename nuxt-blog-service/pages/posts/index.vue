@@ -37,7 +37,7 @@
 </template>
 
 <script>
-//import moment from '~/plugins/moment'
+import moment from '~/plugins/moment'
 import { mapGetters } from 'vuex'
 export default {
   async asyncData({ store }) {
