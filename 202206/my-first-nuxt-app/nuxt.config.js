@@ -25,6 +25,12 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: [
+    '~/plugins/axios.js',
+  ],
+  env: {
+    QIITA_TOKEN: process.env.QIITA_TOKEN,
+  },
   build: {
     /*
     ** Run ESLint on save
